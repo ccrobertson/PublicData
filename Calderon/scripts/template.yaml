@@ -1,0 +1,20 @@
+name: NICKNAME 
+
+metadata:
+  sample_annotation: NICKNAME.csv
+  output_dir: "output"
+  pipeline_interfaces: "/sfs/qumulo/qhome/ccr5ju/software/pepatac/pipeline_interface.yaml"
+        
+derived_columns: [read1, read2]
+
+data_sources:
+  R1: "fastq/{sample_name}_1.fastq.gz"
+  R2: "fastq/{sample_name}_2.fastq.gz"
+
+implied_columns:
+  organism:
+    human:
+      genome: hg38
+      macs_genome_size: hs
+      prealignments: rCRSd human_repeats
+      
