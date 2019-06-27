@@ -12,29 +12,29 @@ cd ${WORK}
 
 
 
-### Fetch data
-(required list of sra accession numbers -- e.g. 'SRR7650803' -- in file called SraAccList.txt)
+### Download and prepare data
+Fetch data. Requires list of sra accession numbers (e.g. 'SRR7650803') in file called SraAccList.txt
 ```bash
 sbatch ${scripts}/fetch_data.slurm
 ```
 
-### Make sure data download was complete
+Make sure data download was complete
 ```bash
 sbatch ${scripts}/check_data.slurm
 grep -v 'ok\|consistent' check_data.log
 ```
 
-### Convert to fastq
+Convert to fastq
 ```bash
 sbatch ${scripts}/convert_to_fastq.slurm
 ```
 
-## Compress fastq files
+Compress fastq files
 ```bash
 bash ${scripts}/gzip_fastq.sh > gzip_fastq2.log 2>&1
 ```
 
-### Prep config files for pepatac
+Prep config files for pepatac
 ```bash
 bash ${scripts}/prep_config_files.sh calderon_atac
 ```
@@ -63,7 +63,7 @@ New naming scheme is `{cell_type}_{donor}_{replicate}`
   done < sra_to_sampleid
   ```
 
-### Analysis of data
+### Analysis 
   ```bash
   bedops --merge `ls ${WORK}/results_combined/peaks/*narrowPeak | tr '@\n' ' '` > ${analysis}/merged_peaks.bed
   ls ${WORK}/results_combined/bigwigs/*_exact.bw | tr '@\n' ' ' > ${analysis}/paths_to_bigWigs.txt
