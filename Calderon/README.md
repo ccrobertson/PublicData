@@ -63,7 +63,7 @@ New naming scheme is `{cell_type}_{donor}_{replicate}`
   done < sra_to_sampleid
   ```
 
-### Analysis 
+### Analysis
   ```bash
   bedops --merge `ls ${WORK}/results_combined/peaks/*narrowPeak | tr '@\n' ' '` > ${analysis}/merged_peaks.bed
   ls ${WORK}/results_combined/bigwigs/*_exact.bw | tr '@\n' ' ' > ${analysis}/paths_to_bigWigs.txt
