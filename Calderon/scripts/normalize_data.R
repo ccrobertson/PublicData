@@ -30,6 +30,15 @@ sampleDF$category[sampleDF$type %in% c("Bulk_B","Mem_B","Plasmablasts","Naive_B"
 sampleDF$category[sampleDF$type %in% c("CD8pos_T","Central_memory_CD8pos_T","Effector_CD4pos_T", "Effector_memory_CD8pos_T", "Follicular_T_Helper","Gamma_delta_T","Memory_Teffs","Memory_Tregs","Naive_CD8_T","Naive_Teffs","Naive_Tregs","Regulatory_T","Th1_precursors","Th17_precursors","Th2_precursors")] <- "T"
 head(sampleDF)
 
+sampleDF$subcategory_cdtype = NA
+sampleDF$subcategory_cdtype[sampleDF$type %in% c("Effector_CD4pos_T","Follicular_T_Helper","Memory_Teffs","Memory_Tregs","Naive_Teffs","Naive_Tregs","Regulatory_T","Th1_precursors","Th17_precursors","Th2_precursors")] <- "CD4"
+sampleDF$subcategory_cdtype[sampleDF$type %in% c("CD8pos_T","Central_memory_CD8pos_T","Effector_memory_CD8pos_T","Naive_CD8_T")] <- "CD8"
+
+sampleDF$subcategory_memory = NA
+sampleDF$subcategory_memory[sampleDF$type %in% c("Memory_NK","Mem_B","Central_memory_CD8pos_T","Effector_memory_CD8pos_T","Memory_Teffs","Memory_Tregs")] <- "Memory"
+sampleDF$subcategory_memory[sampleDF$type %in% c("Naive_B","Naive_CD8_T","Naive_Teffs","Naive_Tregs")] <- "Naive"
+
+saveRDS(sampleDF, file="sampleDF.rds")
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # filter low count peaks
@@ -76,7 +85,7 @@ dev.off()
 
 saveRDS(Yvoomnorm, file="counts_voomnormalized.rds")
 saveRDS(Yranknorm, file="counts_ranknormalized.rds")
-saveRDS(sampleDF, file="sampleDF.rds")
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # remove batch effect
@@ -151,4 +160,3 @@ Yvoomnorm_clean = kmeansQC(Yvoomnorm_nobatch)
 ### save filtered and normalized data
 saveRDS(Yranknorm_clean, file="counts_filtered_ranknormalized.rds")
 saveRDS(Yvoomnorm_clean, file="counts_filtered_voomnormalized.rds")
-saveRDS(sampleDF, file="sampleDF.rds")
