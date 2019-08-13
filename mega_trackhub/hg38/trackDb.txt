@@ -1,11 +1,76 @@
 track atacSeqTrack1
-bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs72928038_homalt_mean.bw
-shortLabel rs72928038_homalt
-longLabel Accessibility from homozygous alt subject
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs10213692_homalt_mean.bw
+shortLabel rs10213692_homalt
+longLabel Average accessibility in homozygous alt subjects
 type bigWig
 
 track atacSeqTrack2
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs10213692_het_mean.bw
+shortLabel rs10213692_het
+longLabel Average accessibility in heterozygous subjects
+type bigWig
+
+track atacSeqTrack3
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs10213692_homref_mean.bw
+shortLabel rs10213692_homref
+longLabel Average accessibility in homozygous ref subjects
+type bigWig
+
+
+track atacSeqTrack4
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs72928038_homalt_mean.bw
+shortLabel rs72928038_homalt
+longLabel Average accessibility in homozygous alt subjects
+type bigWig
+
+track atacSeqTrack5
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs72928038_het_mean.bw
+shortLabel rs72928038_het
+longLabel Average accessibility in heterozygous subjects
+type bigWig
+
+track atacSeqTrack6
 bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs72928038_homref_mean.bw
 shortLabel rs72928038_homref
-longLabel Accessibility from homozygous alt subject
+longLabel Average accessibility in homozygous ref subjects
+type bigWig
+
+
+
+track atacSeqTrack7
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs9388486_homalt_mean.bw
+shortLabel rs9388486_homalt
+longLabel Average accessibility in homozygous alt subjects
+type bigWig
+
+track atacSeqTrack8
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs9388486_het_mean.bw
+shortLabel rs9388486_het
+longLabel Average accessibility in heterozygous subjects
+type bigWig
+
+track atacSeqTrack9
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs9388486_homref_mean.bw
+shortLabel rs9388486_homref
+longLabel Average accessibility in homozygous ref subjects
+type bigWig
+
+
+
+track atacSeqTrack10
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs3902659_homalt_mean.bw
+shortLabel rs3902659_homalt
+longLabel Average accessibility in homozygous alt subjects
+type bigWig
+
+track atacSeqTrack11
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs3902659_het_mean.bw
+shortLabel rs3902659_het
+longLabel Average accessibility in heterozygous subjects
+type bigWig
+
+track atacSeqTrack12
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs3902659_homref_mean.bw
+shortLabel rs3902659_homref
+longLabel Average accessibility in homozygous ref subjects
 type bigWig
