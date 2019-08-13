@@ -1,11 +1,11 @@
 track atacSeqTrack1
-bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/rs72928038_homalt_mean.bw
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs72928038_homalt_mean.bw
 shortLabel rs72928038_homalt
 longLabel Accessibility from homozygous alt subject
 type bigWig
 
 track atacSeqTrack2
-bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/rs72928038_homref_mean.bw
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/rs72928038_homref_mean.bw
 shortLabel rs72928038_homref
 longLabel Accessibility from homozygous alt subject
 type bigWig
