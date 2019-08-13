@@ -5,13 +5,13 @@ longLabel Credible sets for T1D association based on GUESSFM stochastic search
 type bed
 
 
-track atacSeqTrack
+track atacSeqTrack1
 bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/rs72928038_homalt_mean.bw
 shortLabel rs72928038_homalt
 longLabel Accessibility from homozygous alt subject
 type bigWig
 
-track atacSeqTrack
+track atacSeqTrack2
 bigDataUrl https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/rs72928038_homref_mean.bw
 shortLabel rs72928038_homref
 longLabel Accessibility from homozygous alt subject
