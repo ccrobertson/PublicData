@@ -1,2 +1,2 @@
 genome hg38
-trackDb https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/genomes.txt
+trackDb https://raw.githubusercontent.com/ccrobertson/PublicData/master/mega_trackhub/hg38/trackDb.txt
