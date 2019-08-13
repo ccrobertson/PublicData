@@ -1,0 +1,12 @@
+track megaCredibleSets
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/mega-t1d/master/trackhub/hg38/all_creds_b38_new.bed?token=AB53SQTDLMBQ34WDII2EUFK5KLWZG
+shortLabel MEGA credible sets
+longLabel Credible sets for T1D association based on GUESSFM stochastic search
+type bed
+
+
+track atacSeqTrack
+bigDataUrl https://raw.githubusercontent.com/ccrobertson/mega-t1d/master/trackhub/hg38/rs72928038/rs72928038_homalt_S1.bw
+shortLabel rs72928038_homalt_S1
+longLabel Accessibility from homozygous alt subject
+type bigWig

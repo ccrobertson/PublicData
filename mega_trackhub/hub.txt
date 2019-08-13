@@ -1,0 +1,6 @@
+hub mega_chromqtl_tracks
+shortLabel MEGA chromQTL tracks
+longLabel MEGA chromQTL tracks showing accessbility by genotype
+genomesFile https://raw.githubusercontent.com/ccrobertson/mega-t1d/master/trackhub/genomes.txt?token=AB53SQTPBTVT3ARBO6KHSW25KLVKC
+email ccr5ju@virginia.edu
+descriptionUrl descriptionUrl 
